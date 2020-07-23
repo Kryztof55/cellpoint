@@ -1,0 +1,15 @@
+{
+  "name": "c3llpoint",
+  "version": "1.0.0",
+  "description": "development of web page C3llpoint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./assets/scss/styles.scss ./assets/css/styles.min.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
