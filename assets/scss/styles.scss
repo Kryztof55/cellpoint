@@ -4,6 +4,9 @@ $dark: #121212;
 .cp-nav {
   position: relative;
   background-color: $azul;
+  .navbar-toggler {
+    background-color: white;
+  }
   .cp-nav--brand {
     width: 215px;
   }
@@ -28,6 +31,20 @@ $dark: #121212;
   padding: {
     top: 50px;
     bottom: 50px;
+  }
+}
+[desk="whoWeAre"] {
+  background-image: url("../img/espacioCell.jpg");
+  background-size: cover;
+  background-position-x: 900px;
+}
+.cp-img--whoWeAre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 280px;
+    margin-bottom: 20px;
   }
 }
 .cp-title {
@@ -56,7 +73,9 @@ $dark: #121212;
 [theme="white"] {
   color: white;
 }
-
+[weight="bold"] {
+  font-weight: bold;
+}
 .cp-icon {
   width: 100px;
   margin-bottom: 20px;
@@ -79,16 +98,44 @@ $dark: #121212;
 }
 .cp-special {
   position: relative;
+
   &--back {
     position: absolute;
     top: -200px;
     width: 100%;
     background-image: url("../img/technology.png");
-    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
     z-index: -1;
+    padding-top: 300px;
   }
 }
-@media (min-width: 769px) {
+.cp-img--system {
+  width: 280px;
+}
+.cp-footer {
+  min-height: 300px;
+  position: relative;
+  footer {
+    background-color: #ff7704;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: absolute;
+    bottom: -600px;
+    width: 100%;
+    z-index: -2;
+  }
+}
+.cp-brandFooter {
+  width: 140px;
+}
+@media (min-width: 768px) {
+  .cp-footer {
+    footer {
+      height: 385px;
+    }
+  }
 }
 @media (min-width: 1024px) {
   .cp-nav {
@@ -119,6 +166,7 @@ $dark: #121212;
       transform: translateY(-50%);
       height: 190px;
     }
+
     .carousel-indicators {
       bottom: 165px;
     }
@@ -129,9 +177,55 @@ $dark: #121212;
       bottom: 70px;
     }
   }
+  [desk="whoWeAre"] {
+    height: 750px;
+    padding-top: 100px;
+    background-position-x: 0;
+    background-repeat: no-repeat;
+  }
   .cp-icon {
     width: 150px;
   }
+  .cp-special {
+    &--back {
+      padding-top: 400px;
+    }
+  }
+  .cp-img--system {
+    width: 400px;
+    position: absolute;
+    bottom: -223px;
+    right: 139px;
+  }
+  .cp-footer {
+    footer {
+      bottom: -510px;
+      height: 330px;
+      padding-top: 115px;
+    }
+  }
 }
 @media (min-width: 1441px) {
+  [desk="whoWeAre"] {
+    padding-top: 250px;
+    height: 1000px;
+  }
+  .cp-footer {
+    footer {
+      bottom: -670px;
+    }
+  }
+  .cp-special {
+    &--back {
+      height: 950px;
+    }
+  }
+  .cp-img--system {
+    bottom: -460px;
+  }
+  .cp-footer {
+    footer {
+      padding-top: 160px;
+    }
+  }
 }

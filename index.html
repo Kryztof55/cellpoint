@@ -6,6 +6,7 @@
     <title>C3llpoint</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav
@@ -108,9 +109,11 @@
       </a>
     </div>
     <section class="cp-container container">
-      <p class="cp-title-low text-center" theme="blue">WHY C3LLPOINT?</p>
+      <p class="cp-title-low text-center" data-aos="fade-down" theme="blue">
+        WHY C3LLPOINT?
+      </p>
       <div class="row">
-        <div class="col-sm text-center mb-5">
+        <div class="col-sm text-center mb-5" data-aos="fade-up">
           <img
             class="cp-icon"
             src="/assets/img/currentSituation.svg"
@@ -122,7 +125,7 @@
             that obtain large profits, with heavy structures and rigid solutions
           </p>
         </div>
-        <div class="col-sm text-center mb-5">
+        <div class="col-sm text-center mb-5" data-aos="fade-up">
           <img
             class="cp-icon"
             src="/assets/img/need.svg"
@@ -135,7 +138,7 @@
             in-house approach
           </p>
         </div>
-        <div class="col-sm text-center mb-5">
+        <div class="col-sm text-center mb-5" data-aos="fade-up">
           <img
             class="cp-icon"
             src="/assets/img/solution.svg"
@@ -150,12 +153,14 @@
         </div>
       </div>
     </section>
-    <section class="cp-container" style="background-color: #00207f;">
+    <section class="cp-container" desk="whoWeAre">
       <div class="container">
         <div class="row">
-          <div class="col"></div>
+          <div class="cp-img--whoWeAre col text-center" data-aos="fade-right">
+            <img src="/assets/img/whoWeAre.jpg" alt="" />
+          </div>
           <div class="col-12 col-md-5">
-            <p class="cp-title-low mb-5" theme="white">
+            <p class="cp-title-low mb-5" theme="white" data-aos="fade-left">
               WHO <br />
               WE ARE
             </p>
@@ -180,42 +185,131 @@
     </section>
     <section class="cp-container">
       <div class="container">
-        <p class="cp-title-low" theme="blue">
+        <p class="cp-title-low" theme="blue" data-aos="fade-right">
           OUR SOLUTIONS <br />
           <span theme="orange">ADAPT TO ANY MODEL</span>
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="cp-card card">
-                <img class="card-img-top" src="/assets/img/uno.PNG" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="cp-card card">
-                <img class="card-img-top" src="/assets/img/dos.PNG" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="cp-card card">
-                <img class="card-img-top" src="/assets/img/uno.PNG" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-4" data-aos="fade-up">
+            <div class="cp-card card">
+              <img
+                class="card-img-top"
+                src="/assets/img/uno.PNG"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text mb-4" theme="orange">Fully Outsourced</p>
+                <p class="card-text">
+                  An external party manages the end to end solution. The
+                  operator sells the program, collects the premium, obtains a
+                  B&C fee and might undertake limited fulfillment activities.
+                </p>
+                <p weight="bold">
+                  C3llpoint helps to improve overall efficiency of the programm,
+                  increasing profits
+                </p>
               </div>
             </div>
           </div>
-        </p>
+          <div class="col-12 col-md-4" data-aos="fade-up">
+            <div class="cp-card card">
+              <img
+                class="card-img-top"
+                src="/assets/img/dos.PNG"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text mb-4" theme="orange">Self Administered</p>
+                <p class="card-text">
+                  The operator manages the end to end solution, depending on the
+                  legal and compliance they use an underwriter to provide
+                  insurance protection. Might outsource none-core activities.
+                </p>
+                <p weight="bold">
+                  C3llpoint helps to improve operations and control of the
+                  program, improving performance
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up">
+            <div class="cp-card card">
+              <img
+                class="card-img-top"
+                src="/assets/img/uno.PNG"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text mb-4" theme="orange">New Program</p>
+                <p class="card-text">
+                  The operator does not have a device protection program and
+                  might need to launch one to obtain additional revenue streams,
+                  reduce churn and increase competittive advantage.
+                </p>
+                <p weight="bold">
+                  C3llpoint helps to launch and operate new program from
+                  end-to-end
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    
-    <section class="cp-special">
-      <div class="cp-special--back"></div>
 
+    <section class="cp-special">
+      <div class="cp-special--back">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-4">
+              <h3 class="cp-subtitle" theme="orange" data-aos="fade-right">
+                OUR TECHNOLOGY
+              </h3>
+              <p theme="white" data-aos="fade-right">
+                End-to-end, scalable and secure platform that offers flexibility
+                during and after implementation.
+              </p>
+            </div>
+            <div class="col text-center" data-aos="fade-up-left">
+              <img class="cp-img--system" src="/assets/img/system.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cp-footer">
+      <footer>
+        <div class="cp-container--footer container">
+          <div class="row">
+            <div class="col-12 col-md-6" data-aos="fade-down">
+              <img
+                class="cp-brandFooter"
+                src="/assets/img/logoFooter.png"
+                alt=""
+              />
+              <p theme="white">Taking device protection to the next level</p>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-left">
+              <p theme="white">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                Libkedin info
+              </p>
+              <p theme="white">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                operations@c3llpoint.com
+              </p>
+              <p theme="white">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                +1.305.299.5000
+              </p>
+              <p theme="white">
+                <i class="fa fa-phone-square" aria-hidden="true"></i> 260
+                Crandon Blv, 33149 Key Biscayne, FL, USA
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -232,6 +326,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://use.fontawesome.com/f5d329c157.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/functions.js"></script>
   </body>
 </html>

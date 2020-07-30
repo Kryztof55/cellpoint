@@ -10,3 +10,6 @@ $(window).scroll(function (event) {
 if ($(window).scrollTop() > 0) {
   navBar.addClass("color");
 }
+$(document).ready(function () {
+  AOS.init();
+});
