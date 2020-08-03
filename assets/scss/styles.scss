@@ -13,8 +13,24 @@ $dark: #121212;
   font-family: "montserrat-light";
   src: url("../fonts/Montserrat-Light.ttf");
 }
+@font-face {
+  font-family: "montserrat-italic";
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
 html,
-body {
+body,
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+ul {
   font-family: "montserrat-regular";
 }
 .cp-nav {
@@ -48,6 +64,10 @@ body {
     top: 50px;
     bottom: 50px;
   }
+}
+.cp-hero {
+  bottom: 50%;
+  transform: translateY(30%);
 }
 [desk="whoWeAre"] {
   background-image: url("../img/espacioCell.jpg");
@@ -92,6 +112,9 @@ body {
 [weight="bold"] {
   font-family: "montserrat-bold";
 }
+[weight="italic"] {
+  font-family: "montserrat-italic";
+}
 .cp-icon {
   width: 100px;
   margin-bottom: 20px;
@@ -132,6 +155,17 @@ body {
     height: 615px;
     z-index: -1;
     padding-top: 240px;
+    &__second {
+      position: absolute;
+      top: -200px;
+      width: 100%;
+      background-image: url("../img/technology.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 615px;
+      z-index: -1;
+      padding-top: 150px;
+    }
   }
 }
 .cp-img--system {
@@ -141,15 +175,34 @@ body {
   min-height: 300px;
   position: relative;
   footer {
-    background-color: #ff7704;
+    background-color: $naranja;
     padding-top: 75px;
     padding-bottom: 75px;
     position: absolute;
-    bottom: -470px;
+    bottom: -426px;
+    width: 100%;
+    z-index: -2;
+  }
+  &.second {
+    footer {
+      bottom: -1124px;
+    }
+  }
+}
+.cp-setup {
+  min-height: 300px;
+  position: relative;
+  &--inner {
+    background-color: #00207f;
+    padding-top: 140px;
+    padding-bottom: 75px;
+    position: absolute;
+    bottom: -710px;
     width: 100%;
     z-index: -2;
   }
 }
+
 .cp-brandFooter {
   width: 140px;
 }
@@ -168,14 +221,58 @@ body {
     bottom: 165px;
   }
 }
+.cp-circle {
+  width: 50px;
+  height: 50px;
+  background-color: $azul;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "montserrat-bold";
+  margin-right: 20px;
+  &[color="orange"] {
+    background-color: $naranja;
+    color: white;
+  }
+}
+.module {
+  bottom: -745px;
+  .cp-special--back {
+    padding-top: 96px;
+  }
+}
 @media (min-width: 768px) {
   .cp-footer {
     footer {
       height: 420px;
     }
   }
+  .cp-hero {
+    bottom: 50%;
+    transform: translateY(-180%);
+  }
+}
+.cp-module {
+  position: relative;
+  padding-bottom: 15px;
+  &:after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 @media (min-width: 1024px) {
+  .cp-hero {
+    bottom: 50%;
+    transform: translateY(0%);
+  }
   .cp-nav {
     position: fixed;
     background-color: transparent;
@@ -205,6 +302,10 @@ body {
     padding: {
       top: 70px;
       bottom: 70px;
+    }
+    &--second {
+      padding-top: 70px;
+      padding-bottom: 120px;
     }
   }
   [desk="whoWeAre"] {
